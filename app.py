@@ -1,6 +1,9 @@
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import CORS to allow cross-origin requests
+import os
+os.environ['DISPLAY'] = ':0'  # Set a dummy display
+
 import pywhatkit as kit
 
 app = Flask(__name__)
